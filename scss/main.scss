@@ -1,0 +1,76 @@
+@import "./utils/variables";
+
+@import "./bases/reset",
+        "./bases/typography";
+    
+body {
+    background-color: $bg-primary;
+}
+
+
+.bg-image {
+    height: 40vh;
+    background: url("../assets/images/background-pattern-desktop.svg") no-repeat
+    center / cover;
+
+    @media screen and (max-width: 767.9px) {
+        background: url("../assets/images/background-pattern-mobile.svg") no-repeat
+        top center / cover;
+    }
+}
+
+.wrapper {
+    background-color: $bg-secondary;
+    width: 600px;
+    border-radius: 16px;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 767.9px) {
+        width: 279px;
+        border-radius: 8px;
+        padding: 24px;
+    }
+}
+
+header {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 767.9px) {
+        margin: auto;
+        margin-bottom: 24px;
+    }
+}
+
+section {
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        position: relative;
+    }
+
+    h2:hover {
+        color: #AD28EB;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    h2, img {
+        cursor: pointer;
+    }
+}
+
+.linear {
+    height: 1px;
+    background-color: $bg-primary;
+    margin: 24px 0;
+}

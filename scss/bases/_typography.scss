@@ -1,0 +1,38 @@
+body {
+    color: $primary;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+
+    @media screen and (max-width: 767.9px) {
+        font-size: 14px;
+    }
+}
+
+p {
+    line-height: 27px;
+
+    @media screen and (max-width: 767.9px) {
+        line-height: 150%;
+    }
+}
+
+h1 {
+    color: $secondary;
+    font-size: 66px;
+    font-weight: 700;
+
+    @media screen and (max-width: 767.9px) {
+        font-size: 32px;
+    }
+}
+
+h2 {
+    color: $secondary;
+    font-size: 20px;
+    font-weight: 600;
+
+    @media screen and (max-width: 767.9px) {
+        font-size: 18px;
+    }
+}

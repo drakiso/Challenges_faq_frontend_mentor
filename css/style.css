@@ -1,0 +1,135 @@
+/* ---------------reset: initialization of the navigator style------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: hsl(292, 16%, 49%);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+}
+@media screen and (max-width: 767.9px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+p {
+  line-height: 27px;
+}
+@media screen and (max-width: 767.9px) {
+  p {
+    line-height: 150%;
+  }
+}
+
+h1 {
+  color: hsl(292, 42%, 14%);
+  font-size: 66px;
+  font-weight: 700;
+}
+@media screen and (max-width: 767.9px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  color: hsl(292, 42%, 14%);
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (max-width: 767.9px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+}
+
+.bg-image {
+  height: 40vh;
+  background: url("../assets/images/background-pattern-desktop.svg") no-repeat center/cover;
+}
+@media screen and (max-width: 767.9px) {
+  .bg-image {
+    background: url("../assets/images/background-pattern-mobile.svg") no-repeat top center/cover;
+  }
+}
+
+.wrapper {
+  background-color: white;
+  width: 600px;
+  border-radius: 16px;
+  padding: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 767.9px) {
+  .wrapper {
+    width: 279px;
+    border-radius: 8px;
+    padding: 24px;
+  }
+}
+
+header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 767.9px) {
+  header {
+    margin: auto;
+    margin-bottom: 24px;
+  }
+}
+
+section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  position: relative;
+}
+section h2:hover {
+  color: #AD28EB;
+}
+section .hidden {
+  display: none;
+}
+section h2, section img {
+  cursor: pointer;
+}
+
+.linear {
+  height: 1px;
+  background-color: hsl(275, 100%, 97%);
+  margin: 24px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
